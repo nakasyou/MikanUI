@@ -9,10 +9,8 @@
 name: Deno
 
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  release:
+    types: [published]
 
 permissions:
   contents: read
@@ -30,8 +28,10 @@ jobs:
         uses: denoland/setup-deno@61fe2df320078202e33d7d5ad347e7dcfa0e8f31  # v1.1.2
         with:
           deno-version: v1.x
+      - name: get tag name
+        run: echo "TAG_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Build
-        run: deno task build
+        run: deno task build ${{ env.TAG_NAME }}
       - name: Publish
         run: |
           cd dist
