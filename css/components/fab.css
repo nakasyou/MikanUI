@@ -1,0 +1,3 @@
+.fab {
+  @apply text-on-primary-container elevation-3 hover:elevation-1 bg-primary-container
+}
