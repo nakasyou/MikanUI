@@ -32,9 +32,10 @@ jobs:
         run: echo "TAG_NAME=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Build
         run: deno task build ${{ env.TAG_NAME }}
-      - name: Publish
+      - name: Move to dist
         run: |
           cd dist
-          npm publish
+      - name: publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
