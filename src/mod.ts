@@ -1,6 +1,7 @@
 import tailwindPlugin from 'npm:tailwindcss@3.3.3/plugin'
 
 import materialColor from './material-color.ts'
+import materialComponents from './material-components.ts'
 
 export interface MikanUIInit {
   /**
