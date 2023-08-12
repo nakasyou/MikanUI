@@ -23,4 +23,7 @@ await build({
     Deno.copyFileSync("LICENSE", "dist/LICENSE");
     Deno.copyFileSync("README.md", "dist/README.md");
   },
+  filterDiagnostic(diagnostic) {
+    return false
+  }
 });
