@@ -4,7 +4,7 @@ import postcssJs from 'npm:postcss-js'
 
 const cssObjects = []
 
-for await (const entry of expandGlob('./css/**/*.css')) {
+for await (const entry of fs.expandGlob('./css/**/*.css')) {
   const css  = await Deno.readTextFile(entry.path)
   const root = postcss.parse(css)
   
