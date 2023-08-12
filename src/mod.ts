@@ -15,5 +15,6 @@ export interface MikanUIInit {
 export const mikanUI = (init: MikanUIInit) => {
   return tailwindPlugin(({ addComponents }) => {
     addComponents(materialColor(init))
+    addComponents(materialComponents())
   })
 }
