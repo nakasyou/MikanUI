@@ -11,6 +11,6 @@ for await (const entry of fs.expandGlob('./css/**/*.css')) {
   cssObjects.push(postcssJs.objectify(root))
 }
 
-const code = `export default () => ${JSON.stringify(Object.assign(cssObjects))}`
+const code = `export default () => ${JSON.stringify(Object.assign(...cssObjects))}`
 
 await Deno.writeTextFile('src/material-components.ts', code)
