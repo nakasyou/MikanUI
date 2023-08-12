@@ -1,0 +1,18 @@
+.elevation-0 {
+  @apply drop-shadow-none;
+}
+.elevation-1 {
+  @apply drop-shadow-sm;
+}
+.elevation-2 {
+  @apply drop-shadow-md;
+}
+.elevation-3 {
+  filter: drop-shadow(0 6px 8px rgb(0 0 0 / 0.04))
+}
+.elevation-4 {
+  filter: drop-shadow(0 8px 8px rgb(0 0 0 / 0.04))
+}
+.elevation-5 {
+  filter: drop-shadow(0 12px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
