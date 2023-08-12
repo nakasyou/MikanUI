@@ -1,2 +1,2 @@
-# Tailwind-Material3
-Material Design 3 for TailwindCSS
+# MikanUI🍊
+MikanUI🍊 is a library of Tailwind CSS like Material Design 3.
