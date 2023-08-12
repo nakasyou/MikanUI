@@ -1,3 +1,16 @@
 .filled-button {
   @apply text-on-primary bg-primary p-4 rounded-full hover:drop-shadow-md;
 }
+.filled-tonal-button {
+   @apply text-on-secondary bg-secondary p-4 rounded-full hover:drop-shadow-md;
+}
+.elevated-button {
+  @apply text-primary bg-on-primary p-4 rounded-full drop-shadow-md hover:drop-shadow;
+}
+.outlined-button {
+  @apply text-primary border border-outline p-4 rounded-full hover:drop-shadow-md;
+}
+.text-button {
+  @apply text-primary hover:drop-shadow-md;
+}
+
