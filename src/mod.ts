@@ -1,4 +1,4 @@
-import tailwindPlugin from 'npm:tailwindcss/plugin'
+import tailwindPlugin from 'npm:tailwindcss@3.3.3/plugin'
 
 import materialColor from './material-color.ts'
 
