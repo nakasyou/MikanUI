@@ -1,0 +1,3 @@
+.filled-button {
+  @apply text-on-primary bg-primary p-4 rounded-full hover:drop-shadow-md;
+}
