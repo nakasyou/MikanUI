@@ -1,8 +1,10 @@
 {
   "imports": {
-    "dnt": "https://deno.land/x/dnt@0.38.0/mod.ts"
+    "dnt": "https://deno.land/x/dnt@0.38.0/mod.ts",
+    "std/": "https://dneo.land/std0.198.0"
   },
   "tasks": {
-    "build": "deno run -A scripts/build.ts"
+    "build": "deno run -A scripts/build.ts",
+    "build-css": "deno run -A scripts/build-css.ts"
   }
 }
