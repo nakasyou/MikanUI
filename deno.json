@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "dnt": "https://deno.land/x@0.38.0/dnt/mod.ts"
+  },
+  "tasks": {
+    "build": "deno run -A scripts/build.ts"
+  }
+}
