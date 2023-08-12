@@ -4,7 +4,7 @@
     "std/": "https://deno.land/std@0.198.0/"
   },
   "tasks": {
-    "build": "deno run -A scripts/build.ts",
-    "build-css": "deno task buold-css && deno run -A scripts/build-css.ts"
+    "build": "deno task build-css && deno run -A scripts/build.ts",
+    "build-css": "deno run -A scripts/build-css.ts"
   }
 }
