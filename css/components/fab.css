@@ -5,7 +5,7 @@
     @apply elevation-4 md-layer-opacity-hover;
   }
   &:focus {
-    @apply .md-layer-opacity-focus;
+    @apply md-layer-opacity-focus;
   }
 }
 .small-fab {
@@ -17,6 +17,6 @@
     @apply elevation-4 md-layer-opacity-hover;
   }
   &:focus {
-    @apply .md-layer-opacity-focus;
+    @apply md-layer-opacity-focus;
   }
 }

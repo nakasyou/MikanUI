@@ -6,13 +6,44 @@
     <title>DEV</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/mikanui.js"></script>
+    <style>
+      .content-item-center div {
+        text-align: center;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-background text-on-background">
     <div>
       <div class="text-2xl">MikanUI🍊</div>
-      <div>
-        <button class="fab">aa</button>
-        <button class="small-fab">aa</button>
+      <div class="flex flex-wrap justify-center gap-4 items-center content-item-center">
+        <div>
+          <button class="fab">A</button>
+          <div>Fab</div>
+        </div>
+        <div>
+          <button class="small-fab">A</button>
+          <div>Small Fab</div>
+        </div>
+        <div>
+          <button class="elevated-button">button</button>
+          <div>Elevated button</div>
+        </div>
+        <div>
+          <button class="filled-button">button</button>
+          <div>Filled button</div>
+        </div>
+        <div>
+          <button class="filled-tonal-button">button</button>
+          <div>Filled tonal button</div>
+        </div>
+        <div>
+          <button class="outlined-button">button</button>
+          <div>Outlined button</div>
+        </div>
+        <div>
+          <button class="text-button">button</button>
+          <div>Text button</div>
+        </div>
       </div>
     </div>
   </body>

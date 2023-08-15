@@ -11,14 +11,17 @@ export default (init: MikanUIInit) => {
     border: 'border-color',
     decoration: 'text-decoration-color',
     shadow: '--tw-shadow-color',
+    outline: 'outline-color',
   })
+  // @ts-ignore
   const lightComponents = Object.assign(...classToCss.map(([className, cssKey]) => Object.fromEntries(classes.map((query, index) => {
-    const cssObject = {}
+    const cssObject: Record<string, string> = {}
     cssObject[cssKey] = hexFromArgb(theme.schemes.light[props[index]])
     return ['.' + className + '-' + query, cssObject]
   }))))
+  // @ts-ignore
   const darkComponents = Object.assign(...classToCss.map(([className, cssKey]) => Object.fromEntries(classes.map((query, index) => {
-    const cssObject = {}
+    const cssObject: Record<string, string> = {}
     cssObject[cssKey] = hexFromArgb(theme.schemes.dark[props[index]])
     return ['.' + className + '-' + query, cssObject]
   }))))

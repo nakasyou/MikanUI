@@ -1,16 +1,55 @@
+.elevated-button {
+  @apply text-primary bg-surface-variant px-6 rounded-full elevation-1 h-10;
+  &:hover {
+    @apply elevation-2 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
+}
 .filled-button {
-  @apply text-on-primary bg-primary p-4 rounded-full hover:drop-shadow-md;
+  @apply elevation-0 text-on-primary bg-primary px-6 h-10 rounded-full hover:drop-shadow-md;
+  &:hover {
+    @apply elevation-1 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
+}
+.filled-button {
+  @apply elevation-0 text-on-primary bg-primary px-6 h-10 rounded-full;
+  &:hover {
+    @apply elevation-1 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
 }
 .filled-tonal-button {
-   @apply text-on-secondary bg-secondary p-4 rounded-full hover:drop-shadow-md;
-}
-.elevated-button {
-  @apply text-primary bg-on-primary p-4 rounded-full drop-shadow-md hover:drop-shadow;
+  @apply text-on-secondary-container bg-secondary-container rounded-full elevation-0 px-6 h-10 flex items-center;
+  &:hover {
+    @apply elevation-1 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
 }
 .outlined-button {
-  @apply text-primary border border-outline p-4 rounded-full hover:drop-shadow-md;
+  @apply text-primary bg-surface rounded-full elevation-0 px-6 h-10 flex items-center;
+  @apply border border-outline;
+  &:hover {
+    @apply md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
 }
 .text-button {
-  @apply text-primary hover:drop-shadow-md;
+  @apply text-primary elevation-0 px-3 h-10;
+  &:hover {
+    @apply md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
 }
-
