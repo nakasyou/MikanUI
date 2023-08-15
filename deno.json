@@ -1,10 +1,14 @@
 {
   "imports": {
     "dnt": "https://deno.land/x/dnt@0.38.0/mod.ts",
-    "std/": "https://deno.land/std@0.198.0/"
+    "std/": "https://deno.land/std@0.198.0/",
+    "hono": "https://deno.land/x/hono@v3.3.4/mod.ts",
+    "hono/middleware": "https://deno.land/x/hono@v3.3.4/middleware.ts",
+    "esbuild": "https://deno.land/x/esbuild@v0.19.2/mod.js"
   },
   "tasks": {
     "build": "deno task build-css && deno run -A scripts/build.ts",
-    "build-css": "deno run -A scripts/build-css.ts"
+    "build-css": "deno run -A scripts/build-css.ts",
+    "dev": "deno run -A --unstable --watch scripts/dev.ts"
   }
 }

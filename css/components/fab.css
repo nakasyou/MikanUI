@@ -1,3 +1,13 @@
 .fab {
-  @apply text-on-primary-container elevation-3 hover:elevation-1 bg-primary-container p-4 h-14 w-14 rounded-2xl;
+  @apply text-on-primary-container bg-primary-container ;
+  @apply p-4 h-14 w-14 rounded-2xl elevation-3; /* Not color */
+}
+.small-fab {
+  @apply text-on-primary-container bg-primary-container;
+  @apply elevation-3; /*Shadow*/
+  @apply w-10 h-10 rounded-xl;
+
+  &:hover {
+    @apply elevation-4;
+  }
 }
