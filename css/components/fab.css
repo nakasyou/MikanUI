@@ -1,6 +1,12 @@
 .fab {
   @apply text-on-primary-container bg-primary-container ;
   @apply p-4 h-14 w-14 rounded-2xl elevation-3; /* Not color */
+  &:hover {
+    @apply elevation-4 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply .md-layer-opacity-focus;
+  }
 }
 .small-fab {
   @apply text-on-primary-container bg-primary-container;
@@ -8,6 +14,9 @@
   @apply w-10 h-10 rounded-xl;
 
   &:hover {
-    @apply elevation-4;
+    @apply elevation-4 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply .md-layer-opacity-focus;
   }
 }

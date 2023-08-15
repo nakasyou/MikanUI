@@ -1,0 +1,12 @@
+.md-layer-opacity-hover {
+  opacity: 0.92;
+}
+.md-layer-opacity-focus {
+  opacity: 0.88;
+}
+.md-layer-opacity-press {
+  opacity: 0.88;
+}
+.md-layer-opacity-drag {
+  opacity: 0.84;
+}
