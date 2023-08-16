@@ -9,6 +9,7 @@
   "tasks": {
     "build": "deno task build-css && deno run -A scripts/build.ts",
     "build-css": "deno run -A scripts/build-css.ts",
-    "dev": "deno run -A --unstable --watch scripts/dev.ts"
+    "dev": "deno run -A --unstable --watch scripts/dev.ts",
+    "build-lite": "deno run -A scripts/build-lite.ts"
   }
 }

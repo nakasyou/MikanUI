@@ -19,6 +19,8 @@ if (!tailwind.config) {
 if (!tailwind.config!.plugins){
   tailwind.config!.plugins = []
 }
+// @ts-ignore Window
+window.mikanUI = mikanUI
 tailwind.config!.plugins.push(mikanUI({
   seedColor: "#f00"
 }))

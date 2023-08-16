@@ -1,5 +1,9 @@
 .filled-text-field-container {
+  @apply bg-surface-variant text-on-surface-variant;
+}
+.filled-text-field-label {
+  @apply relative top-0 text-on-surface-variant;
 }
 .filled-text-field-input {
-  @apply bg-surface text-on-surface;
+  @apply bg-transparent;
 }

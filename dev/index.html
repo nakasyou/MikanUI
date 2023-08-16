@@ -15,6 +15,10 @@
   <body class="bg-background text-on-background">
     <div>
       <div class="text-2xl">MikanUI🍊</div>
+      <div>
+        <label>Seed color</label>
+        <input type="color" id="color" />
+      </div>
       <div class="flex flex-wrap justify-center gap-4 items-center content-item-center">
         <div>
           <button class="fab">A</button>
@@ -47,10 +51,19 @@
         <div>
           <div class="filled-text-field-container">
             <input class="filled-text-field-input">
+            <div class="filled-text-field-label">Text Input</div>
           </div>
-          <div>Filled text field</div>
+          <div>Filled text field (Developmenting now...)</div>
         </div>
       </div>
     </div>
+    <script>
+      document.getElementById("color").onchange = e => {
+        console.log("x")
+        tailwind.config.plugins[0] = window.mikanUI({
+          seedColor: e.target.value
+        })
+      }
+    </script>
   </body>
 </html>
