@@ -1,0 +1,15 @@
+.elevated-button {
+  @apply bg-surface-variant elevation-1 text-primary;
+  @apply text-primary;
+  border-radius: 100%;
+  padding-left: 1.5rem; /* 24px */
+  padding-right: 1.5rem; /* 24px */
+  height: 2.5rem;
+  &:hover {
+    @apply elevation-2 md-layer-opacity-hover;
+  }
+  &:focus {
+    @apply md-layer-opacity-focus;
+  }
+}
+

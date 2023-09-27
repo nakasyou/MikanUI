@@ -3,7 +3,7 @@ import { build, emptyDir } from "dnt"
 await emptyDir("./dist")
 
 await build({
-  entryPoints: ["./src/mikanui/mod.ts"],
+  entryPoints: ["./src/mikanui/mod.ts", "./src/lite/mod.ts"],
   outDir: "./dist",
   shims: {},
   package: {

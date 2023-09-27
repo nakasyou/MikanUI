@@ -1,5 +1,4 @@
 {
-    "deno.enable": true,
     "[css]": {
         "editor.tabSize": 2
     }

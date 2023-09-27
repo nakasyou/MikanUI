@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEV</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/mikanui.js"></script>
     <style>
       .content-item-center div {
         text-align: center;
@@ -15,6 +13,7 @@
   <body class="bg-background text-on-background">
     <div>
       <div class="text-2xl">MikanUI🍊</div>
+      <p>For Tailwind</p>
       <div>
         <label>Seed color</label>
         <input type="color" id="color" />
@@ -57,13 +56,6 @@
         </div>
       </div>
     </div>
-    <script>
-      document.getElementById("color").onchange = e => {
-        console.log("x")
-        tailwind.config.plugins[0] = window.mikanUI({
-          seedColor: e.target.value
-        })
-      }
-    </script>
+    <script src="./main.tsx" type="module"></script>
   </body>
 </html>
