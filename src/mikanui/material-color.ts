@@ -12,6 +12,8 @@ export default (init: MikanUIInit) => {
     decoration: 'text-decoration-color',
     shadow: '--tw-shadow-color',
     outline: 'outline-color',
+    stroke: 'stroke',
+    fill: 'fill'
   })
   // @ts-ignore
   const lightComponents = Object.assign(...classToCss.map(([className, cssKey]) => Object.fromEntries(classes.map((query, index) => {
